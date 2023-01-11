@@ -75,12 +75,10 @@ Vestibulum eu dolor et justo porta porta. Ut dapibus urna vel aliquet convallis.
 
             var counter = 1;
 
-            // Change multiple spaces for one space
             text=text.replace(/[\s]+/gim, ' ');
 
-            // Lets loop through the string and count the words
             text.replace(/(\s+)/g, function (text) {
-               // For each word found increase the counter value by 1
+             
                counter++;
             });
 
