@@ -33,36 +33,16 @@ for (let w = hacker1.length - 1; w >= 0; w--) {
 console.log(`${lettersB}`);
 
 //3.3
-let first = 0;
-let second = 0;
-let who = 0;
-let dictionary = `ABCDEFGHIJKLMNOPQRSTUVWYZ`;
-for (let e = 0; e < dictionary.length; e++) {
-  if (`${hacker1[0]}` == `${dictionary[e]}`) {
-    first = e;
-  }
-  else if (`${hacker2[0]}` == `${hacker1[0]}`) {
-    who = 1;
-  }
-}
-
-for (let a = 0; a < dictionary.length; a++) {
-  if (`${hacker2[0]}` == `${dictionary[a]}`) {
-    second = a;
-  }
-  else if (`${hacker2[0]}` == `${hacker1[0]}`) {
-    who = 1;
-  }
-}
-if (first < second) {
+if (hacker1[0] > hacker2[0]) {
   console.log(`Yo, the navigator goes first definitely.`)
 }
-else if (first > second) {
+else if (hacker1[0] < hacker2[0]) {
   console.log(`The driver's name goes first.`);
 }
 else {
   console.log(`What?! You both have the same name?`);
 }
+
 
 //Bonus 1
 let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra, velit vitae laoreet tincidunt, enim sem consequat quam, id pharetra ligula erat nec turpis. Donec in augue ante. Aenean dignissim, risus non semper dictum, nunc odio condimentum purus, at finibus mauris urna eu erat. Vestibulum sapien nisi, volutpat eget nunc in, faucibus consequat mauris. Nullam ullamcorper tincidunt finibus. Etiam ex lorem, ultrices quis augue ut, maximus sollicitudin metus. Nunc semper elementum erat, at eleifend libero feugiat ac. Vestibulum sed mi id augue mattis pulvinar vitae vitae neque. Aliquam tempor consequat tortor tempor blandit. Pellentesque enim tellus, laoreet nec vestibulum sed, tempor a leo et.
