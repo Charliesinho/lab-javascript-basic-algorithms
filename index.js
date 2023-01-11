@@ -71,21 +71,8 @@ Sed aliquam libero magna, sed luctus velit ullamcorper ac. Nam sed lorem sed dui
 
 Vestibulum eu dolor et justo porta porta. Ut dapibus urna vel aliquet convallis. Nunc ac magna diam. Integer pulvinar, libero ut fringilla convallis, dolor nisl pellentesque lectus, id porta erat enim eget lectus. In vitae urna porttitor, convallis augue nec, vulputate libero. Nulla vitae magna tincidunt velit vehicula dignissim sit amet ut nisl. Praesent venenatis dictum luctus.`
 
- function countWordsString(text){
-
-            var counter = 1;
-
-            text=text.replace(/[\s]+/gim, ' ');
-
-            text.replace(/(\s+)/g, function (text) {
-             
-               counter++;
-            });
-
-            return counter;
-        }
-count = countWordsString(longText);
-console.log(count);
+let wordCount = longText.split(` `);
+console.log(wordCount.length);
 
 let k;
 let l;
